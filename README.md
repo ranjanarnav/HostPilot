@@ -1,4 +1,35 @@
-# <img src="https://cdn-icons-png.flaticon.com/512/3600/3600921.png" width="40" /> HostPilot
+<p align="center">
+  <img src="assets/banner.png" alt="HostPilot Banner" />
+</p>
+
+<p align="center">
+  <img src="assets/logo.png" width="80" />
+</p>
+
+<h1 align="center">HostPilot</h1>
+
+<p align="center">
+  <b>An All-in-One Hosting Management Solution</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/status-stable-brightgreen" />
+  <img src="https://img.shields.io/badge/version-v1.0.0-blue" />
+  <img src="https://img.shields.io/badge/python-3.9+-yellow" />
+  <img src="https://img.shields.io/badge/license-MIT-lightgrey" />
+  <img src="https://img.shields.io/github/stars/ranjanarnav/HostPilot?style=social" />
+<img src="https://img.shields.io/github/forks/ranjanarnav/HostPilot?style=social" />
+<img src="https://img.shields.io/github/issues/ranjanarnav/HostPilot" />
+<img src="https://img.shields.io/github/last-commit/ranjanarnav/HostPilot" />
+</p>
+
+<p align="center">
+  HostPilot is a powerful <b>Discord-based hosting management system</b> designed to automate server operations using the <b>Pterodactyl API</b>.
+  It provides hosting providers with tools to manage servers, log transactions, automate tasks, and monitor infrastructure — all from Discord.
+</p>
+
+---
+
 
 **HostPilot — An All-in-One Hosting Management Solution**
 
@@ -7,71 +38,75 @@ It provides hosting providers with tools to manage servers, log transactions, au
 
 ---
 
-## 🚀 Features
+## Features
 
-* 🖥️ **Pterodactyl Server Control**
+### <img src="assets/icons/server-solid.png" width="18" /> Pterodactyl Server Control
 
-  * Create, manage, and monitor servers
-  * Server information retrieval
-  * Panel integration
-
-* 💰 **Money Logging System**
-
-  * Track transactions
-  * Log payments automatically
-  * Generate financial records
-
-* 📊 **Status Monitoring**
-
-  * Custom server status tracking
-  * Hosting availability updates
-  * Real-time status display
-
-* ⏰ **Automation System**
-
-  * Scheduled reminders
-  * Automated tasks using APScheduler
-  * Time-based system execution
-
-* 📄 **Report Generation**
-
-  * Generate PDF reports
-  * Export structured logs
-  * Organized data tracking
-
-* 🔐 **Role-Based Access**
-
-  * Permission-based command control
-  * Admin-only system features
-
-* 📱 **Utility Tools**
-
-  * QR code generation
-  * Branding controls
-  * Moderation utilities
+* Create, manage, and monitor servers
+* Server information retrieval
+* Panel integration
 
 ---
 
-## 🧰 Tech Stack
+### <img src="assets/icons/money-solid.png" width="18" /> Money Logging System
 
-| Technology          | Usage                     |
-| ------------------- | ------------------------- |
-| **Python**          | Core programming language |
-| **discord.py**      | Discord bot framework     |
-| **Pterodactyl API** | Server management         |
-| **APScheduler**     | Task scheduling           |
-| **ReportLab**       | PDF generation            |
-| **Requests**        | API communication         |
-| **python-dotenv**   | Environment management    |
-| **QRCode**          | QR generation             |
+* Track transactions
+* Log payments automatically
+* Generate financial records
 
 ---
 
-## 📦 Installation
+### <img src="assets/icons/shield-solid.png" width="18" /> Status Monitoring
+
+* Custom server status tracking
+* Hosting availability updates
+* Real-time status display
+
+---
+
+### <img src="assets/icons/gear-solid.png" width="18" /> Automation System
+
+* Scheduled reminders
+* Automated tasks using APScheduler
+* Time-based system execution
+
+---
+
+### <img src="assets/icons/file-solid.png" width="18" /> Report Generation
+
+* Generate PDF reports
+* Export structured logs
+* Organized data tracking
+
+---
+
+### <img src="assets/icons/wallet-solid.png" width="18" /> Role-Based Access
+
+* Permission-based command control
+* Admin-only system features
+
+---
+
+## Tech Stack
+
+| Technology      | Usage                     |
+| --------------- | ------------------------- |
+| Python          | Core programming language |
+| discord.py      | Discord bot framework     |
+| Pterodactyl API | Server management         |
+| APScheduler     | Task scheduling           |
+| ReportLab       | PDF generation            |
+| Requests        | API communication         |
+| python-dotenv   | Environment management    |
+| QRCode          | QR generation             |
+
+---
+
+## Installation
 
 ### Clone the Repository
 
-```bash
+```
 git clone https://github.com/ranjanarnav/HostPilot.git
 cd HostPilot
 ```
@@ -80,7 +115,7 @@ cd HostPilot
 
 ### Install Dependencies
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
@@ -90,7 +125,7 @@ pip install -r requirements.txt
 
 Create a `.env` file:
 
-```env
+```
 DISCORD_TOKEN=your_discord_bot_token_here
 PTERO_API_KEY=your_pterodactyl_api_key_here
 
@@ -114,41 +149,50 @@ TIMEZONE=your_timezone_here
 
 ### Run HostPilot
 
-```bash
+```
 python bot.py
 ```
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
-```bash
+```
 hostpilot/
 │   .env
 │   bot.py
 │   config.py
 │   README.md
 │   requirements.txt
-│   
-├───cogs
-│   │   branding.py
-│   │   client.py
-│   │   ed_report.py
-│   │   info.py
-│   │   moderation.py
-│   │   money.py
-│   │   ptero-manage.py
-│   │   ptero.py
-│   │   reminder.py
-│   │   serverinfo.py
-│   │   status.py
-│   │   utilities.py
-├─── 
+│
+├── assets/
+│   └── icons/
+│       file-solid.png
+│       gear-solid.png
+│       money-solid.png
+│       server-solid.png
+│       shield-solid.png
+│       wallet-solid.png
+│   └── logo.png
+│
+├── cogs/
+│   branding.py
+│   client.py
+│   ed_report.py
+│   info.py
+│   moderation.py
+│   money.py
+│   ptero-manage.py
+│   ptero.py
+│   reminder.py
+│   serverinfo.py
+│   status.py
+│   utilities.py
 ```
 
 ---
 
-## 🧠 Use Cases
+## Use Cases
 
 HostPilot is ideal for:
 
@@ -160,7 +204,7 @@ HostPilot is ideal for:
 
 ---
 
-## 🔐 Security Notes
+## Security Notes
 
 * Never expose `.env` files publicly
 * Always rotate API keys if leaked
@@ -168,7 +212,7 @@ HostPilot is ideal for:
 
 ---
 
-## 📌 Requirements
+## Requirements
 
 * Python **3.9+**
 * Discord Bot Token
@@ -177,35 +221,40 @@ HostPilot is ideal for:
 
 ---
 
-## 📊 Planned Features
+## Planned Features
 
-* 📡 Web Dashboard Integration
-* 🧾 Advanced Billing System
-* 📈 Usage Analytics
-* 🔄 Backup Automation
-* 🌐 Multi-Server Support
+* Web Dashboard Integration
+* Advanced Billing System
+* Usage Analytics
+* Backup Automation
+* Multi-Server Support
 
 ---
 
-## 🏷️ Version
+## Version
 
-```text
 v1.0.0 — Initial Release
-```
 
 ---
 
-## 📄 License
+## License
 
 MIT License
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Arnav Ranjan**
 Backend Systems • Cloud Infrastructure • Platform Engineering
 
 ---
 
-⭐ If you find this project useful, consider giving it a **star**.
+## Credits
+
+**Logo Credits:** Freepik — Flaticon
+**Icon Credits:** Font Awesome
+
+---
+
+If you find this project useful, consider giving it a **star**.
